@@ -170,7 +170,14 @@ class MATEMATIK: NSViewController {
     }
     
     func obtenerRespuestaUsuario() -> Int {
-        let respuesta = Int(respuestaUsuario.stringValue)!
+        var respuesta: Int
+        
+        do {
+            respuesta = try Int(respuestaUsuario.stringValue)!
+        }
+        catch {
+                print("ESCRIBE BIEN")
+        }
         return respuesta
     }
     
@@ -320,7 +327,7 @@ class MATEMATIK: NSViewController {
                 contadorRespuestasIncorrectas += 1
                 contadorRachas = 0
                 generarPregunta()
-               
+             
                 actualizarImagenVidas()
                 labelFinDelJuego.stringValue = "PERDISTE"
                 labelRacha.stringValue = "Racha: \(contadorRachas)"

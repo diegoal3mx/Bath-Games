@@ -40,9 +40,9 @@ class MenuMATEMATIK: NSViewController {
     
     @IBAction func regresar(_ sender: NSButton) {
         
-        isJuegoActive=false
         let menu = self
         dismiss(menu)
+        
     }
     
     @IBAction func seleccionNivel(_ sender: NSButton) {

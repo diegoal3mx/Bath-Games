@@ -836,7 +836,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="vg2-4j-U0y">
                                     <font key="font" size="13" name="HelveticaNeue-Medium"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.098039215690000001" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
                             </textField>
@@ -1004,6 +1004,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RSH-GL-5OF">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="bathEngland" id="KQg-eO-rTM"/>
+                            </imageView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sra-NQ-OUF">
                                 <rect key="frame" x="71" y="56" width="112" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -1033,7 +1038,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="BATH GAMES" id="ULG-E9-z4G">
                                     <font key="font" size="50" name="HelveticaNeue-Bold"/>
-                                    <color key="textColor" red="0.94117647059999998" green="0.91372549020000005" blue="0.82352941180000006" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="1" green="0.74960428889799413" blue="0.96357934275180268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -1365,6 +1370,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IconPREGUNTA2" width="512" height="512"/>
+        <image name="bathEngland" width="500" height="281"/>
         <image name="confeti" width="500" height="400"/>
         <image name="copa_premio" width="2000" height="2000"/>
         <image name="latido-del-corazon" width="512" height="512"/>

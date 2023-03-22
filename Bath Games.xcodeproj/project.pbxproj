@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1D01B2D29CB89060025473C /* bathEngland.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1D01B2C29CB89050025473C /* bathEngland.gif */; };
 		F1E4E6D029CACF79009356A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4E6CF29CACF79009356A4 /* AppDelegate.swift */; };
 		F1E4E6D229CACF79009356A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4E6D129CACF79009356A4 /* ViewController.swift */; };
 		F1E4E6D429CACF98009356A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E4E6D329CACF98009356A4 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1D01B2C29CB89050025473C /* bathEngland.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bathEngland.gif; sourceTree = "<group>"; };
 		F1E4E6CC29CACF79009356A4 /* Bath Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bath Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E4E6CF29CACF79009356A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E4E6D129CACF79009356A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		F1E6E0B829CAE14F001CF7C7 /* Animated Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F1D01B2C29CB89050025473C /* bathEngland.gif */,
 				F1E6E0B929CAE16B001CF7C7 /* confeti.gif */,
 			);
 			path = "Animated Assets";
@@ -148,6 +151,7 @@
 				F1E4E6D429CACF98009356A4 /* Assets.xcassets in Resources */,
 				F1E4E6D729CACF98009356A4 /* Main.storyboard in Resources */,
 				F1E6E0BA29CAE16B001CF7C7 /* confeti.gif in Resources */,
+				F1D01B2D29CB89060025473C /* bathEngland.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

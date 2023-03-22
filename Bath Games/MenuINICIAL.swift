@@ -16,15 +16,6 @@ class MenuINICIAL: NSViewController {
         
     }
     
-    override func viewDidDisappear() {
-   
-        if(!isMenuJuegoActive){
-            
-            self.view.window?.cancelOperation(self)
-            
-        }
-    
-   }
     
     override func viewDidLoad() {
         
@@ -35,16 +26,15 @@ class MenuINICIAL: NSViewController {
     @IBOutlet weak var btnPREGUNTA2: NSButton!
     @IBOutlet weak var btnMATEMATIK: NSButton!
    
-    var isMenuJuegoActive:Bool = false
     
     @IBAction func irAPregunta2(_ sender: NSButton) {
-        isMenuJuegoActive=true
+        
         performSegue(withIdentifier: "pregunta2", sender: self)
     }
     
     
     @IBAction func irAMatematik(_ sender: NSButton) {
-        isMenuJuegoActive=true
+        
         performSegue(withIdentifier: "matematik", sender: self)
     }
     
