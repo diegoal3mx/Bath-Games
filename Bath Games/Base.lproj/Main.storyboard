@@ -775,19 +775,19 @@
                         <outlet property="botonNivel" destination="jqQ-7U-fI1" id="lpD-3a-gXg"/>
                         <outlet property="btnDificil" destination="Efb-j9-CvF" id="bMc-cr-HJ4"/>
                         <outlet property="btnFacil" destination="oHe-8r-aav" id="1ok-uk-Bok"/>
-                        <segue destination="zUM-Ao-aty" kind="show" identifier="irMatematik" id="DnP-a4-p6R"/>
+                        <segue destination="zUM-Ao-aty" kind="modal" identifier="irMatematik" id="DnP-a4-p6R"/>
                     </connections>
                 </viewController>
                 <customObject id="P2y-sU-OuS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="250"/>
+            <point key="canvasLocation" x="1481" y="265"/>
         </scene>
         <!--MATEMATIK-->
         <scene sceneID="CNe-oH-IBv">
             <objects>
                 <viewController id="zUM-Ao-aty" customClass="MATEMATIK" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="f8e-eP-Cld">
-                        <rect key="frame" x="0.0" y="0.0" width="452" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="320"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vMr-QF-q6w">
@@ -923,7 +923,7 @@
                                 <color key="bezelColor" red="0.28235294119999998" green="0.79607843140000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="JugarDeNuevo:" target="zUM-Ao-aty" id="div-0N-eRU"/>
-                                    <segue destination="fW1-R6-XRh" kind="show" identifier="irInicio" id="SHI-Af-tRS"/>
+                                    <segue destination="fW1-R6-XRh" kind="modal" identifier="irInicio" id="SHI-Af-tRS"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHk-t3-0C2">
@@ -980,7 +980,7 @@
                 </viewController>
                 <customObject id="Q25-i2-Fzq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1595" y="767"/>
+            <point key="canvasLocation" x="1495" y="777"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Mh9-Vg-mn3">
@@ -997,6 +997,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <segue destination="F18-EH-6el" kind="modal" id="Csy-Cg-M9N"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-bc-tHP">
                                 <rect key="frame" x="179" y="114" width="108" height="32"/>
@@ -1006,7 +1009,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="fW1-R6-XRh" kind="show" id="3Wx-tX-29M"/>
+                                    <segue destination="fW1-R6-XRh" kind="modal" id="3Wx-tX-29M"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-1J-XmJ">
@@ -1025,13 +1028,299 @@
             </objects>
             <point key="canvasLocation" x="766" y="241"/>
         </scene>
+        <!--MenuPREGUNTA2-->
+        <scene sceneID="eGl-RF-z49">
+            <objects>
+                <viewController id="F18-EH-6el" customClass="MenuPREGUNTA2" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="nPR-Lx-HWG">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-Vk-1wg">
+                                <rect key="frame" x="288" y="63" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Avanzado" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RBR-Ey-2FU">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="mandarDificultad:" target="F18-EH-6el" id="Wo9-dS-BzB"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fso-ij-Swv">
+                                <rect key="frame" x="175" y="63" width="100" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Intermedio" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JTy-5C-g8z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="mandarDificultad:" target="F18-EH-6el" id="gGy-9b-Zbb"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-tG-rN5">
+                                <rect key="frame" x="-2" y="107" width="454" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Selecciona la dificultad" id="HJo-kV-RLL">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Bv-QF-X2O">
+                                <rect key="frame" x="-2" y="230" width="454" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="PREGUNTA2" id="bmq-3i-iDY">
+                                    <font key="font" size="50" name="HelveticaNeue-Bold"/>
+                                    <color key="textColor" red="0.2604620031635102" green="0.91006741776494848" blue="0.46253508142101679" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwS-Sa-EA8">
+                                <rect key="frame" x="188" y="147" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="matematicas" id="bSu-PA-mPB"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNr-di-8GD">
+                                <rect key="frame" x="54" y="63" width="106" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Principiante" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IIg-ny-5Tf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="mandarDificultad:" target="F18-EH-6el" id="RE7-9j-wLe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="btnAvanzado" destination="a3j-Vk-1wg" id="who-W5-wcw"/>
+                        <outlet property="btnCambiarDificultad" destination="59C-J0-rCv" id="nvy-vs-kMn"/>
+                        <outlet property="btnFalso" destination="MD1-J4-PbZ" id="nS8-Ms-13r"/>
+                        <outlet property="btnIntermedio" destination="fso-ij-Swv" id="Zhc-9u-lie"/>
+                        <outlet property="btnPrincipiante" destination="SNr-di-8GD" id="iLF-yv-Fg6"/>
+                        <outlet property="btnReiniciar" destination="B5N-Qn-oiw" id="fhq-g4-0gT"/>
+                        <outlet property="btnVerdadero" destination="YXT-Mo-ymz" id="BdO-Sz-RdA"/>
+                        <outlet property="corazon1" destination="BdW-40-wYF" id="3C8-aW-emr"/>
+                        <outlet property="corazon2" destination="Cnc-Bq-qFD" id="hB4-FY-uae"/>
+                        <outlet property="corazon3" destination="nBk-mI-vLu" id="mQE-7W-8te"/>
+                        <outlet property="corazon4" destination="oTq-VG-Ze0" id="bnC-g7-HfO"/>
+                        <outlet property="corazon5" destination="USO-Z8-Mhc" id="2Wl-2T-Sp8"/>
+                        <outlet property="imgConfeti" destination="0GO-XR-Qlo" id="mkb-lR-7pp"/>
+                        <outlet property="imgCopa" destination="rZy-Rf-jAQ" id="zS0-Ry-sIM"/>
+                        <outlet property="pregunta" destination="ll7-t6-dRS" id="Aok-hl-Fl7"/>
+                        <outlet property="textVidas" destination="7Ze-Kn-xuJ" id="bGk-5l-qle"/>
+                        <outlet property="txtCorrectas" destination="amQ-Cy-cnA" id="j7V-wm-SZB"/>
+                        <outlet property="txtDificultad" destination="Fv6-tG-rN5" id="cBJ-Np-CdV"/>
+                        <outlet property="txtVidas" destination="7Ze-Kn-xuJ" id="mti-V8-tdb"/>
+                        <segue destination="Utp-81-lzR" kind="modal" identifier="juego" destinationCreationSelector="juego:sender:segueIdentifier:" id="1ef-I7-gba"/>
+                    </connections>
+                </viewController>
+                <customObject id="FAl-yh-Xy3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="773"/>
+        </scene>
+        <!--ViewJuego-->
+        <scene sceneID="1Ve-qg-ETo">
+            <objects>
+                <viewController title="ViewJuego" id="Utp-81-lzR" customClass="PREGUNTA2" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="lUn-SM-VTT" customClass="jue">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="330"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ze-Kn-xuJ">
+                                <rect key="frame" x="401" y="259" width="58" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="VIDAS: 5" id="mGu-9q-scR">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USO-Z8-Mhc">
+                                <rect key="frame" x="335" y="276" width="31" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pixel-heart" id="sGE-2r-QTq"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oTq-VG-Ze0">
+                                <rect key="frame" x="360" y="276" width="31" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pixel-heart" id="ksR-tb-k34"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBk-mI-vLu">
+                                <rect key="frame" x="385" y="276" width="31" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pixel-heart" id="zGm-9T-eIe"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnc-Bq-qFD">
+                                <rect key="frame" x="414" y="276" width="31" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pixel-heart" id="MjE-Lj-qSo"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BdW-40-wYF">
+                                <rect key="frame" x="443" y="276" width="31" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pixel-heart" id="lnR-Z8-3Ph"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YXT-Mo-ymz">
+                                <rect key="frame" x="76" y="79" width="98" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Verdadero" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YRz-jd-Ok1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="botones:" target="Utp-81-lzR" id="Luy-DH-20p"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MD1-J4-PbZ">
+                                <rect key="frame" x="329" y="79" width="98" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Falso" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WZc-of-g3n">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="botones:" target="Utp-81-lzR" id="dKJ-tV-EXc"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="ll7-t6-dRS">
+                                <rect key="frame" x="-2" y="124" width="506" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" controlSize="large" scrollable="YES" lineBreakMode="clipping" alignment="center" title="Label" id="aNc-hT-eBU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-Cy-cnA">
+                                <rect key="frame" x="29" y="279" width="116" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="CORRECTAS: 0" id="1SO-ph-SZg">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59C-J0-rCv">
+                                <rect key="frame" x="265" y="79" width="146" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cambiar dificultad" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lNm-Nj-0AD">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemIndigoColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="cambiarDificultad:" target="Utp-81-lzR" id="KQt-aY-6Ce"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aop-bx-mEj">
+                                <rect key="frame" x="216" y="186" width="76" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="4oo-v3-RhR"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EOU-Y6-BDI">
+                                <rect key="frame" x="29" y="255" width="130" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="RACHA: 0" id="BSU-Gq-vhv">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdV-t7-tTn">
+                                <rect key="frame" x="29" y="233" width="130" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="RACHA MÁXIMA: 0" id="jwj-US-lMg">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5N-Qn-oiw">
+                                <rect key="frame" x="392" y="16" width="86" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Reiniciar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OVu-QG-yj8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemIndigoColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="reiniciarJuego:" target="Utp-81-lzR" id="vKe-CY-u45"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0GO-XR-Qlo">
+                                <rect key="frame" x="200" y="192" width="103" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="confeti" id="YhW-AH-L3U"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rZy-Rf-jAQ">
+                                <rect key="frame" x="218" y="195" width="65" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="copa_premio" id="lYN-yZ-s96"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbL-jf-Awp">
+                                <rect key="frame" x="173" y="279" width="165" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="5 PUNTOS PARA GANAR" id="v2P-Ro-VLQ">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QL-6W-4ec">
+                                <rect key="frame" x="29" y="213" width="100" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="JUGADAS: 0" id="IvE-Zo-vre">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="btnCambiarDificultad" destination="59C-J0-rCv" id="hc4-eS-91N"/>
+                        <outlet property="btnFalso" destination="MD1-J4-PbZ" id="mh2-bk-kPS"/>
+                        <outlet property="btnReiniciar" destination="B5N-Qn-oiw" id="bzS-sR-SrQ"/>
+                        <outlet property="btnVerdadero" destination="YXT-Mo-ymz" id="KMY-ux-4qm"/>
+                        <outlet property="corazon1" destination="BdW-40-wYF" id="o5U-eQ-ze8"/>
+                        <outlet property="corazon2" destination="Cnc-Bq-qFD" id="qG1-CI-CyW"/>
+                        <outlet property="corazon3" destination="nBk-mI-vLu" id="EvH-pp-cu6"/>
+                        <outlet property="corazon4" destination="oTq-VG-Ze0" id="wZt-2C-3rn"/>
+                        <outlet property="corazon5" destination="USO-Z8-Mhc" id="f92-7J-Xgh"/>
+                        <outlet property="imgConfeti" destination="0GO-XR-Qlo" id="3pa-oM-eKI"/>
+                        <outlet property="imgCopa" destination="rZy-Rf-jAQ" id="gIL-Zn-bnB"/>
+                        <outlet property="imgPregunta" destination="Aop-bx-mEj" id="g78-dY-cMy"/>
+                        <outlet property="pregunta" destination="ll7-t6-dRS" id="Mo9-bH-1u2"/>
+                        <outlet property="txtCorrectas" destination="amQ-Cy-cnA" id="7vN-FJ-8D9"/>
+                        <outlet property="txtJugadas" destination="1QL-6W-4ec" id="ZqV-GU-a44"/>
+                        <outlet property="txtPuntosParaGanar" destination="vbL-jf-Awp" id="Mxp-qI-gsf"/>
+                        <outlet property="txtRacha" destination="EOU-Y6-BDI" id="Cie-AR-geG"/>
+                        <outlet property="txtRachaMaxima" destination="JdV-t7-tTn" id="B8p-9r-jLP"/>
+                        <outlet property="txtVidas" destination="7Ze-Kn-xuJ" id="OHn-rQ-nOh"/>
+                        <segue destination="F18-EH-6el" kind="modal" identifier="dificultad" id="NWM-6W-Qgn"/>
+                    </connections>
+                </viewController>
+                <customObject id="GRn-qS-CDZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="771"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="1ef-I7-gba"/>
+        <segue reference="NWM-6W-Qgn"/>
         <segue reference="SHI-Af-tRS"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="confeti" width="500" height="400"/>
+        <image name="copa_premio" width="2000" height="2000"/>
         <image name="latido-del-corazon" width="512" height="512"/>
         <image name="matematicas" width="512" height="512"/>
+        <image name="pixel-heart" width="640" height="640"/>
         <image name="triste" width="512" height="512"/>
     </resources>
 </document>

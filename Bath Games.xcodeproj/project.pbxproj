@@ -13,6 +13,9 @@
 		F1E4E6D729CACF98009356A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E4E6D529CACF98009356A4 /* Main.storyboard */; };
 		F1E6E0B529CADBB6001CF7C7 /* MATEMATIK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6E0B429CADBB6001CF7C7 /* MATEMATIK.swift */; };
 		F1E6E0B729CADD0F001CF7C7 /* MenuMATEMATIK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6E0B629CADD0F001CF7C7 /* MenuMATEMATIK.swift */; };
+		F1E6E0BA29CAE16B001CF7C7 /* confeti.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1E6E0B929CAE16B001CF7C7 /* confeti.gif */; };
+		F1E6E0BC29CAE1EA001CF7C7 /* PREGUNTA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6E0BB29CAE1EA001CF7C7 /* PREGUNTA2.swift */; };
+		F1E6E0BE29CAE204001CF7C7 /* MenuPREGUNTA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6E0BD29CAE204001CF7C7 /* MenuPREGUNTA2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F1E4E6D829CACF98009356A4 /* Bath_Games.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bath_Games.entitlements; sourceTree = "<group>"; };
 		F1E6E0B429CADBB6001CF7C7 /* MATEMATIK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATEMATIK.swift; sourceTree = "<group>"; };
 		F1E6E0B629CADD0F001CF7C7 /* MenuMATEMATIK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMATEMATIK.swift; sourceTree = "<group>"; };
+		F1E6E0B929CAE16B001CF7C7 /* confeti.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = confeti.gif; sourceTree = "<group>"; };
+		F1E6E0BB29CAE1EA001CF7C7 /* PREGUNTA2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PREGUNTA2.swift; sourceTree = "<group>"; };
+		F1E6E0BD29CAE204001CF7C7 /* MenuPREGUNTA2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPREGUNTA2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,23 @@
 				F1E4E6CF29CACF79009356A4 /* AppDelegate.swift */,
 				F1E4E6D129CACF79009356A4 /* ViewController.swift */,
 				F1E4E6D329CACF98009356A4 /* Assets.xcassets */,
+				F1E6E0B829CAE14F001CF7C7 /* Animated Assets */,
 				F1E4E6D529CACF98009356A4 /* Main.storyboard */,
+				F1E6E0BB29CAE1EA001CF7C7 /* PREGUNTA2.swift */,
+				F1E6E0BD29CAE204001CF7C7 /* MenuPREGUNTA2.swift */,
 				F1E6E0B429CADBB6001CF7C7 /* MATEMATIK.swift */,
 				F1E6E0B629CADD0F001CF7C7 /* MenuMATEMATIK.swift */,
 				F1E4E6D829CACF98009356A4 /* Bath_Games.entitlements */,
 			);
 			path = "Bath Games";
+			sourceTree = "<group>";
+		};
+		F1E6E0B829CAE14F001CF7C7 /* Animated Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6E0B929CAE16B001CF7C7 /* confeti.gif */,
+			);
+			path = "Animated Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +144,7 @@
 			files = (
 				F1E4E6D429CACF98009356A4 /* Assets.xcassets in Resources */,
 				F1E4E6D729CACF98009356A4 /* Main.storyboard in Resources */,
+				F1E6E0BA29CAE16B001CF7C7 /* confeti.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E6E0B729CADD0F001CF7C7 /* MenuMATEMATIK.swift in Sources */,
+				F1E6E0BE29CAE204001CF7C7 /* MenuPREGUNTA2.swift in Sources */,
 				F1E4E6D229CACF79009356A4 /* ViewController.swift in Sources */,
 				F1E4E6D029CACF79009356A4 /* AppDelegate.swift in Sources */,
+				F1E6E0BC29CAE1EA001CF7C7 /* PREGUNTA2.swift in Sources */,
 				F1E6E0B529CADBB6001CF7C7 /* MATEMATIK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
