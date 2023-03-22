@@ -769,13 +769,27 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbH-AU-8dm">
+                                <rect key="frame" x="5" y="255" width="90" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Regresar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="abs-BN-aqu">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="regresar:" target="fW1-R6-XRh" id="IQ6-fU-Eel"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="botonNivel" destination="jqQ-7U-fI1" id="lpD-3a-gXg"/>
+                        <outlet property="botonRegresar" destination="ZbH-AU-8dm" id="WZX-IO-35A"/>
                         <outlet property="btnDificil" destination="Efb-j9-CvF" id="bMc-cr-HJ4"/>
                         <outlet property="btnFacil" destination="oHe-8r-aav" id="1ok-uk-Bok"/>
                         <segue destination="zUM-Ao-aty" kind="modal" identifier="irMatematik" id="DnP-a4-p6R"/>
+                        <segue destination="Azi-b5-SDo" kind="modal" identifier="regresarDesdeMatematik" id="wDb-1S-6Uk"/>
                     </connections>
                 </viewController>
                 <customObject id="P2y-sU-OuS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -982,10 +996,10 @@
             </objects>
             <point key="canvasLocation" x="1495" y="777"/>
         </scene>
-        <!--View Controller-->
+        <!--MenuINICIAL-->
         <scene sceneID="Mh9-Vg-mn3">
             <objects>
-                <viewController id="Azi-b5-SDo" sceneMemberID="viewController">
+                <viewController id="Azi-b5-SDo" customClass="MenuINICIAL" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="qTT-AL-qCh">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -999,7 +1013,7 @@
                                 </buttonCell>
                                 <color key="bezelColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
-                                    <segue destination="F18-EH-6el" kind="modal" id="Csy-Cg-M9N"/>
+                                    <action selector="irAPregunta2:" target="Azi-b5-SDo" id="New-9r-xS0"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-bc-tHP">
@@ -1011,7 +1025,7 @@
                                 </buttonCell>
                                 <color key="bezelColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
-                                    <segue destination="fW1-R6-XRh" kind="modal" id="3Wx-tX-29M"/>
+                                    <action selector="irAMatematik:" target="Azi-b5-SDo" id="uAD-R9-bpq"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFn-EK-OVB">
@@ -1035,6 +1049,12 @@
                             </imageView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="btnMATEMATIK" destination="0fc-bc-tHP" id="qFw-Re-niC"/>
+                        <outlet property="btnPREGUNTA2" destination="Sra-NQ-OUF" id="sh5-UQ-4Q6"/>
+                        <segue destination="F18-EH-6el" kind="modal" identifier="pregunta2" id="Pxn-5l-Gga"/>
+                        <segue destination="fW1-R6-XRh" kind="modal" identifier="matematik" id="OcK-gy-odm"/>
+                    </connections>
                 </viewController>
                 <customObject id="87P-Ai-KYa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1049,7 +1069,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-Vk-1wg">
-                                <rect key="frame" x="288" y="53" width="94" height="32"/>
+                                <rect key="frame" x="288" y="43" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Avanzado" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RBR-Ey-2FU">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1061,7 +1081,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fso-ij-Swv">
-                                <rect key="frame" x="175" y="53" width="100" height="32"/>
+                                <rect key="frame" x="175" y="43" width="100" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Intermedio" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JTy-5C-g8z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1073,7 +1093,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-tG-rN5">
-                                <rect key="frame" x="-2" y="97" width="454" height="16"/>
+                                <rect key="frame" x="-2" y="87" width="454" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Selecciona la dificultad" id="HJo-kV-RLL">
                                     <font key="font" metaFont="system"/>
@@ -1082,7 +1102,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Bv-QF-X2O">
-                                <rect key="frame" x="-2" y="220" width="454" height="60"/>
+                                <rect key="frame" x="-2" y="202" width="454" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="PREGUNTA2" id="bmq-3i-iDY">
                                     <font key="font" size="50" name="HelveticaNeue-Bold"/>
@@ -1091,12 +1111,24 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwS-Sa-EA8">
-                                <rect key="frame" x="188" y="137" width="75" height="75"/>
+                                <rect key="frame" x="188" y="127" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="IconPREGUNTA2" id="bSu-PA-mPB"/>
                             </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6F3-Tk-0WO">
+                                <rect key="frame" x="9" y="257" width="90" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Regresar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2gu-PA-NtH">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="regresar:" target="F18-EH-6el" id="Ffd-Hh-7NC"/>
+                                </connections>
+                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNr-di-8GD">
-                                <rect key="frame" x="54" y="53" width="106" height="32"/>
+                                <rect key="frame" x="54" y="43" width="106" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Principiante" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IIg-ny-5Tf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1115,6 +1147,7 @@
                         <outlet property="btnFalso" destination="MD1-J4-PbZ" id="nS8-Ms-13r"/>
                         <outlet property="btnIntermedio" destination="fso-ij-Swv" id="Zhc-9u-lie"/>
                         <outlet property="btnPrincipiante" destination="SNr-di-8GD" id="iLF-yv-Fg6"/>
+                        <outlet property="btnRegresar" destination="6F3-Tk-0WO" id="weJ-rx-XhK"/>
                         <outlet property="btnReiniciar" destination="B5N-Qn-oiw" id="fhq-g4-0gT"/>
                         <outlet property="btnVerdadero" destination="YXT-Mo-ymz" id="BdO-Sz-RdA"/>
                         <outlet property="corazon1" destination="BdW-40-wYF" id="3C8-aW-emr"/>
@@ -1127,20 +1160,20 @@
                         <outlet property="pregunta" destination="ll7-t6-dRS" id="Aok-hl-Fl7"/>
                         <outlet property="textVidas" destination="7Ze-Kn-xuJ" id="bGk-5l-qle"/>
                         <outlet property="txtCorrectas" destination="amQ-Cy-cnA" id="j7V-wm-SZB"/>
-                        <outlet property="txtDificultad" destination="Fv6-tG-rN5" id="cBJ-Np-CdV"/>
                         <outlet property="txtVidas" destination="7Ze-Kn-xuJ" id="mti-V8-tdb"/>
                         <segue destination="Utp-81-lzR" kind="modal" identifier="juego" destinationCreationSelector="juego:sender:segueIdentifier:" id="1ef-I7-gba"/>
+                        <segue destination="Azi-b5-SDo" kind="modal" identifier="regresarDesdePregunta2" id="Ura-eI-d9w"/>
                     </connections>
                 </viewController>
                 <customObject id="FAl-yh-Xy3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="813" y="773"/>
         </scene>
-        <!--ViewJuego-->
+        <!--PREGUNTA2-->
         <scene sceneID="1Ve-qg-ETo">
             <objects>
-                <viewController title="ViewJuego" id="Utp-81-lzR" customClass="PREGUNTA2" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="lUn-SM-VTT" customClass="jue">
+                <viewController title="PREGUNTA2" id="Utp-81-lzR" customClass="PREGUNTA2" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="lUn-SM-VTT">
                         <rect key="frame" x="0.0" y="0.0" width="500" height="330"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -1326,8 +1359,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Csy-Cg-M9N"/>
-        <segue reference="3Wx-tX-29M"/>
+        <segue reference="Pxn-5l-Gga"/>
+        <segue reference="wDb-1S-6Uk"/>
+        <segue reference="SHI-Af-tRS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IconPREGUNTA2" width="512" height="512"/>

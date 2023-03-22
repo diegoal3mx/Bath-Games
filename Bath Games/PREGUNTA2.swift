@@ -70,7 +70,6 @@ class PREGUNTA2: NSViewController {
         }
     
     
-    var gradienteFondo=CAGradientLayer()
     
     class GradientView: NSView {
         var gradient: NSGradient?
@@ -89,7 +88,6 @@ class PREGUNTA2: NSViewController {
         
             super.viewDidAppear()
             self.view.window?.title="PREGUNTA2"
-            self.view.window?.backgroundColor=NSColor(red: 0.0666, green: 0.7882, blue: 0.4588, alpha: 100)
             let gradientView = GradientView(frame: self.view.frame)
             gradientView.gradient = NSGradient(starting: NSColor.red, ending: NSColor.blue)
             

@@ -51,6 +51,12 @@ class MATEMATIK: NSViewController {
         self.view.window?.backgroundColor = NSColor (red: 0.0941, green: 0.1137, blue: 0.1921, alpha: 100)
     }
     
+    override func viewDidDisappear() {
+   
+        performSegue(withIdentifier: "irInicio", sender: self)
+    
+   }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btnJugarDeNuevo.isHidden = true
@@ -68,11 +74,11 @@ class MATEMATIK: NSViewController {
         operando1.placeholderString = String(operandos[0])
         operando2.placeholderString = String(operandos[1])
         operador.placeholderString = operadores.randomElement()
-        calcularResultado()
+       
     }
     
     func verificarNivel() -> String {
-        var nivelElegido = nivelLabel.stringValue
+        let nivelElegido = nivelLabel.stringValue
         return nivelElegido
     }
     
@@ -164,7 +170,7 @@ class MATEMATIK: NSViewController {
     }
     
     func obtenerRespuestaUsuario() -> Int {
-        var respuesta = Int(respuestaUsuario.stringValue)!
+        let respuesta = Int(respuestaUsuario.stringValue)!
         return respuesta
     }
     
@@ -179,8 +185,6 @@ class MATEMATIK: NSViewController {
     func guardarRacha() {
         if (contadorRachas > mayorRacha) {
             mayorRacha = contadorRachas
-        } else {
-            mayorRacha
         }
         labelMayorRacha.stringValue = "MAYOR RACHA: \(mayorRacha)"
     }
@@ -207,7 +211,7 @@ class MATEMATIK: NSViewController {
                     contadorRespuestasCorrectas += 1
                     contadorRachas += 1
                     generarPregunta()
-                    calcularResultado()
+                   
                     labelRacha.stringValue = "Racha: \(contadorRachas)"
                     respuestaUsuario.stringValue = ""
                     contarPuntos()
@@ -218,7 +222,7 @@ class MATEMATIK: NSViewController {
                     contadorVidas -= 1
                     contadorRespuestasIncorrectas += 1
                     generarPregunta()
-                    calcularResultado()
+                   
                     actualizarImagenVidas()
                     contadorRachas = 0
                     labelRacha.stringValue = "Racha: \(contadorRachas)"
@@ -291,14 +295,10 @@ class MATEMATIK: NSViewController {
     
     
     @IBAction func JugarDeNuevo(_ sender: Any) {
-        performSegue(withIdentifier: "irInicio", sender: self)
+        let juego = self
+        dismiss(juego)
     }
     
-    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        if segue.identifier == "irInicio" {
-            let destinationVC = segue.destinationController as! MenuMATEMATIK
-        }
-    }
     
         func handleCalificarRespuestasUnaVida() {
             if (calcularResultado() == obtenerRespuestaUsuario()) {
@@ -308,7 +308,7 @@ class MATEMATIK: NSViewController {
                 contadorRespuestasCorrectas += 1
                 contadorRachas += 1
                 generarPregunta()
-                calcularResultado()
+                
                 labelRacha.stringValue = "Racha: \(contadorRachas)"
                 respuestaUsuario.stringValue = ""
                 contarPuntos()
@@ -320,7 +320,7 @@ class MATEMATIK: NSViewController {
                 contadorRespuestasIncorrectas += 1
                 contadorRachas = 0
                 generarPregunta()
-                calcularResultado()
+               
                 actualizarImagenVidas()
                 labelFinDelJuego.stringValue = "PERDISTE"
                 labelRacha.stringValue = "Racha: \(contadorRachas)"
