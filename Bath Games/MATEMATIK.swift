@@ -56,7 +56,7 @@ class MATEMATIK: NSViewController {
         performSegue(withIdentifier: "irInicio", sender: self)
     
    }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         btnJugarDeNuevo.isHidden = true
@@ -71,9 +71,9 @@ class MATEMATIK: NSViewController {
         operando2.isEditable = false
         operador.isEditable = false
         operandos = [Int.random(in: 1...100), Int.random(in: 1...100)]
-        operando1.placeholderString = String(operandos[0])
-        operando2.placeholderString = String(operandos[1])
-        operador.placeholderString = operadores.randomElement()
+        operando1.stringValue = String(operandos[0])
+        operando2.stringValue = String(operandos[1])
+        operador.stringValue = operadores.randomElement()!
        
     }
     
@@ -157,10 +157,10 @@ class MATEMATIK: NSViewController {
     }
     
     func calcularResultado() -> Int {
-        if (operador.placeholderString == "+") {
+        if (operador.stringValue == "+") {
             resultado = operandos[0] + operandos[1]
         }
-        else if (operador.placeholderString == "-") {
+        else if (operador.stringValue == "-") {
             resultado = operandos[0] - operandos[1]
         }
         else {
@@ -171,13 +171,10 @@ class MATEMATIK: NSViewController {
     
     func obtenerRespuestaUsuario() -> Int {
         var respuesta: Int
+
+            respuesta = Int(respuestaUsuario.stringValue) ?? 0
         
-        do {
-            respuesta = try Int(respuestaUsuario.stringValue)!
-        }
-        catch {
-                print("ESCRIBE BIEN")
-        }
+        
         return respuesta
     }
     
@@ -202,9 +199,9 @@ class MATEMATIK: NSViewController {
         }
         else {
             operandos = [Int.random(in: 1...100), Int.random(in: 1...100)]
-            operando1.placeholderString = String(operandos[0])
-            operando2.placeholderString = String(operandos[1])
-            operador.placeholderString = operadores.randomElement()
+            operando1.stringValue = String(operandos[0])
+            operando2.stringValue = String(operandos[1])
+            operador.stringValue = operadores.randomElement()!
         }
         contJugadas += 1
     }
@@ -301,7 +298,7 @@ class MATEMATIK: NSViewController {
     
     
     
-    @IBAction func JugarDeNuevo(_ sender: Any) {
+    @IBAction func JugarDeNuevo(_ sender: NSButton) {
         let juego = self
         dismiss(juego)
     }

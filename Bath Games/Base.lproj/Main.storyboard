@@ -799,7 +799,7 @@
         <!--MATEMATIK-->
         <scene sceneID="CNe-oH-IBv">
             <objects>
-                <viewController id="zUM-Ao-aty" customClass="MATEMATIK" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MATEMATIK" id="zUM-Ao-aty" customClass="MATEMATIK" customModule="Bath_Games" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="f8e-eP-Cld">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="320"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -834,16 +834,16 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMe-Rm-o1s">
                                 <rect key="frame" x="98" y="177" width="34" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="vg2-4j-U0y">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="vg2-4j-U0y">
                                     <font key="font" size="13" name="HelveticaNeue-Medium"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.098039215690000001" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-JI-AyU">
                                 <rect key="frame" x="309" y="178" width="34" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Cmo-s6-3oW">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Cmo-s6-3oW">
                                     <font key="font" size="13" name="HelveticaNeue-Medium"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.098039215690000001" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -852,7 +852,7 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UTz-Jz-HmZ">
                                 <rect key="frame" x="208" y="177" width="34" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="xrg-i7-eiV">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="xrg-i7-eiV">
                                     <font key="font" size="13" name="HelveticaNeue-Medium"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.098039215690000001" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -937,7 +937,6 @@
                                 <color key="bezelColor" red="0.28235294119999998" green="0.79607843140000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="JugarDeNuevo:" target="zUM-Ao-aty" id="div-0N-eRU"/>
-                                    <segue destination="fW1-R6-XRh" kind="modal" identifier="irInicio" id="SHI-Af-tRS"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHk-t3-0C2">
@@ -990,11 +989,12 @@
                         <outlet property="operando1" destination="OMe-Rm-o1s" id="zVf-ne-fBN"/>
                         <outlet property="operando2" destination="hzi-JI-AyU" id="c5x-ri-AR5"/>
                         <outlet property="respuestaUsuario" destination="hYM-Dl-aGU" id="WUY-GI-6zb"/>
+                        <segue destination="fW1-R6-XRh" kind="modal" identifier="irInicio" id="wjZ-Qp-2Il"/>
                     </connections>
                 </viewController>
                 <customObject id="Q25-i2-Fzq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1495" y="777"/>
+            <point key="canvasLocation" x="1500" y="1016"/>
         </scene>
         <!--MenuINICIAL-->
         <scene sceneID="Mh9-Vg-mn3">
@@ -1366,7 +1366,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Pxn-5l-Gga"/>
         <segue reference="wDb-1S-6Uk"/>
-        <segue reference="SHI-Af-tRS"/>
+        <segue reference="wjZ-Qp-2Il"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IconPREGUNTA2" width="512" height="512"/>
