@@ -761,7 +761,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="matematicas" id="JLU-1a-EHK"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-7X-0a2">
-                                <rect key="frame" x="9" y="203" width="433" height="60"/>
+                                <rect key="frame" x="-2" y="203" width="454" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="MATEMATIK" id="LGc-Ml-09d">
                                     <font key="font" size="50" name="HelveticaNeue-Bold"/>
@@ -987,40 +987,52 @@
             <objects>
                 <viewController id="Azi-b5-SDo" sceneMemberID="viewController">
                     <view key="view" id="qTT-AL-qCh">
-                        <rect key="frame" x="0.0" y="0.0" width="467" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sra-NQ-OUF">
-                                <rect key="frame" x="177" y="184" width="112" height="32"/>
+                                <rect key="frame" x="71" y="56" width="112" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="PREGUNTA2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KQB-gf-tJ7">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="bezelColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <segue destination="F18-EH-6el" kind="modal" id="Csy-Cg-M9N"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-bc-tHP">
-                                <rect key="frame" x="179" y="114" width="108" height="32"/>
+                                <rect key="frame" x="269" y="56" width="108" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="MATEMATIK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9Nf-Xi-vHH">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="bezelColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <segue destination="fW1-R6-XRh" kind="modal" id="3Wx-tX-29M"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-1J-XmJ">
-                                <rect key="frame" x="215" y="247" width="37" height="16"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFn-EK-OVB">
+                                <rect key="frame" x="-2" y="203" width="454" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="cot-SI-IXZ">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="BATH GAMES" id="ULG-E9-z4G">
+                                    <font key="font" size="50" name="HelveticaNeue-Bold"/>
+                                    <color key="textColor" red="0.94117647059999998" green="0.91372549020000005" blue="0.82352941180000006" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p65-eM-YQv">
+                                <rect key="frame" x="286" y="112" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="matematicas" id="9fV-fn-GOi"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kT-Rd-fQK">
+                                <rect key="frame" x="90" y="112" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="IconPREGUNTA2" id="FB7-Qe-oQg"/>
+                            </imageView>
                         </subviews>
                     </view>
                 </viewController>
@@ -1037,29 +1049,31 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-Vk-1wg">
-                                <rect key="frame" x="288" y="63" width="94" height="32"/>
+                                <rect key="frame" x="288" y="53" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Avanzado" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RBR-Ey-2FU">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="bezelColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="mandarDificultad:" target="F18-EH-6el" id="Wo9-dS-BzB"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fso-ij-Swv">
-                                <rect key="frame" x="175" y="63" width="100" height="32"/>
+                                <rect key="frame" x="175" y="53" width="100" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Intermedio" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JTy-5C-g8z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="bezelColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="mandarDificultad:" target="F18-EH-6el" id="gGy-9b-Zbb"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-tG-rN5">
-                                <rect key="frame" x="-2" y="107" width="454" height="16"/>
+                                <rect key="frame" x="-2" y="97" width="454" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Selecciona la dificultad" id="HJo-kV-RLL">
                                     <font key="font" metaFont="system"/>
@@ -1068,7 +1082,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Bv-QF-X2O">
-                                <rect key="frame" x="-2" y="230" width="454" height="60"/>
+                                <rect key="frame" x="-2" y="220" width="454" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="PREGUNTA2" id="bmq-3i-iDY">
                                     <font key="font" size="50" name="HelveticaNeue-Bold"/>
@@ -1077,17 +1091,18 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwS-Sa-EA8">
-                                <rect key="frame" x="188" y="147" width="75" height="75"/>
+                                <rect key="frame" x="188" y="137" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="matematicas" id="bSu-PA-mPB"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="IconPREGUNTA2" id="bSu-PA-mPB"/>
                             </imageView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNr-di-8GD">
-                                <rect key="frame" x="54" y="63" width="106" height="32"/>
+                                <rect key="frame" x="54" y="53" width="106" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Principiante" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IIg-ny-5Tf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="bezelColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="mandarDificultad:" target="F18-EH-6el" id="RE7-9j-wLe"/>
                                 </connections>
@@ -1311,11 +1326,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1ef-I7-gba"/>
-        <segue reference="NWM-6W-Qgn"/>
-        <segue reference="SHI-Af-tRS"/>
+        <segue reference="Csy-Cg-M9N"/>
+        <segue reference="3Wx-tX-29M"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="IconPREGUNTA2" width="512" height="512"/>
         <image name="confeti" width="500" height="400"/>
         <image name="copa_premio" width="2000" height="2000"/>
         <image name="latido-del-corazon" width="512" height="512"/>
